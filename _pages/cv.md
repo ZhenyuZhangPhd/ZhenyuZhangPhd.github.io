@@ -12,15 +12,15 @@ redirect_from:
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Information and Communication Engneering, Southwest Jiaotong University, 2022
+* B.S. in Communication Engneering, Southwest Jiaotong University, 2019
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2022-2023: Assistant Software Engneer
+  * XX research institute
+  * Duties includes: C++ developing
+  * Supervisor: XX
 
 * Fall 2015: Research Assistant
   * Github University
