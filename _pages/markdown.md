@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "中文页面测试"
 author_profile: true
 redirect_from: 
   - /md/
@@ -8,6 +8,8 @@ redirect_from:
 ---
 ## 中文页面测试
 * 这是一个测试的中文页面
+
+
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
