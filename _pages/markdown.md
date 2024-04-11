@@ -6,7 +6,8 @@ redirect_from:
   - /md/
   - /markdown.html
 ---
-
+## 中文页面测试
+* 这是一个测试的中文页面
 ## Locations of key files/directories
 
 * Basic config options: _config.yml
