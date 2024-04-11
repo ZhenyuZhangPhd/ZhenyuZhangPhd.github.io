@@ -8,8 +8,10 @@ main:
 
   # - title: "Teaching"
   #   url: /teaching/    
-    
-  - title: "中文页面"
+  - title: "中文页面markdown"
+    url: /markdown/
+
+  - title: "中文测试portfolio"
     url: /portfolio/
         
   - title: "Blog Posts"
@@ -18,5 +20,4 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+
