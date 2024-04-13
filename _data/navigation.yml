@@ -8,10 +8,10 @@ main:
 
   # - title: "Teaching"
   #   url: /teaching/    
-  - title: "中文页面markdown"
+  - title: "中文页面"
     url: /markdown/
 
-  - title: "中文测试portfolio"
+  - title: "portfolio"
     url: /portfolio/
         
   - title: "Blog Posts"

@@ -24,7 +24,7 @@ author:
   avatar           : "QQ_QRcode.png"
   name             : "Zhenyu Zhang"
   pronouns         : "he/him" # example: "she/her"  "he/him"  "they/them"
-  bio              : "A P.h.D. student in Southwest Jiaotong University"
+  bio              : "A P.h.D. student of Information and Communication Engineering."
   location         : "Chengdu, China"
   employer         : "Southwest Jiaotong University"
   uri              : # URL
@@ -32,9 +32,9 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : ./_pages/404.md
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/my-orcid?orcid=0009-0004-6613-4551"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
 
@@ -42,7 +42,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "https://github.com/zhenyuzhangphd"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -70,7 +70,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # URL
+  zhihu            : ./_pages/404.md
 
 
 # Site Settings

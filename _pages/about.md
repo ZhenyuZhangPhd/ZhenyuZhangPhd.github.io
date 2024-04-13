@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Welcome to my academic personal websites"
 author_profile: true
 redirect_from: 
   - /about/
@@ -14,7 +14,3 @@ I am very fortunate to study in the Key Lab of information coding and transmissi
 You can find my CV here: [ZhenyuZhang's Curriculum Vitae](../assets/zzyCV.pdf).
 
 <!-- [Email](mailto:XX@stu.pku.edu.cn) / [Github](https://github.com/QiuDi233) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/qd1813100174?spm=1000.2115.3001.5343) -->
-
-
-
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. 
