@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "zh-CN"
-title                    : "Your Name / Site Title"
+title                    : "My Personal Website"
 title_separator          : "-"
 name                     : &name "Zhenyu Zhang"
 description              : &description "personal description"
@@ -24,7 +24,7 @@ author:
   avatar           : "QQ_QRcode.png"
   name             : "Zhenyu Zhang"
   pronouns         : "he/him" # example: "she/her"  "he/him"  "they/them"
-  bio              : "A P.h.D. student of Information and Communication Engineering."
+  bio              : "A P.h.D. student in Information and Communication Engineering."
   location         : "Chengdu, China"
   employer         : "Southwest Jiaotong University"
   uri              : # URL
@@ -70,7 +70,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : ./_pages/404.md
+  zhihu            : # Username
 
 
 # Site Settings
