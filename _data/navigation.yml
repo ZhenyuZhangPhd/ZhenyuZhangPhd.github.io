@@ -16,6 +16,7 @@ main:
         
   - title: "Blog Posts"
     url: /non-menu-page/
+    # url: /year-archive/
     
   - title: "CV"
     url: /cv/
