@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a first year Phd student from [School of Information Science and Technology](https://sist.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/). My research interest includes wireless communication, delay doppler domain communication, integrated sensing and communications, and multiple access.
+I'm a second year Phd student from [School of Information Science and Technology](https://sist.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/). My research interest includes wireless communication, delay doppler domain communication, integrated sensing and communications, and multiple access.
 
 I am very fortunate to study in the Key Lab of information coding and transmission led by [Prof. Pingzhi Fan](https://www.XXX.com/) from [School of Information Science and Technology](https://sist.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/).
 

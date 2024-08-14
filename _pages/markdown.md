@@ -6,8 +6,8 @@ redirect_from:
   - /md/
   - /markdown.html
 ---
-## 中文页面测试
-* 这是一个测试的中文页面
+## 欢迎访问我的个人学术网站
+我是西南交通大学信息科学与技术学院的二年级博士生。我的研究兴趣包括无线通信、延迟多普勒域通信、通信感知一体化、无线定位等。
 
 
 ## Locations of key files/directories
