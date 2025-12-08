@@ -5,12 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 ## Journal Papers ##
-  1. ZhenyuZhang, et al, "AOA limited Scatterer Model for Next Generation Wireless Communication", accepted by IEEE TVT.
-  2. ZhenyuZhang, et al, "A Novel OTFS Target Detection Framework", subimitted to IEEE TWC.
-  3. 还没有high quality research, 需要加油。
+  1. Z. Zhang, Q. Wang, G. Liu, F. Gao, and P. Fan, “Cross-Frame OTFS Parameter Estimation Based On Chinese Remainder Theorem,” IEEE Transactions on Wireless Communications, pp. 1–1, 2025, doi: 10.1109/TWC.2025.3596965.
+  2. Z. Zhang and P. Deng, “An AOA Limited Scattering Model and Its Statistics in Next Generation Wireless Communications,” IEEE Trans. Veh. Technol., vol. 74, no. 3, pp. 5130–5134, Mar. 2025, doi: 10.1109/TVT.2024.3492232.
+  3. Submitted to TWC, et al.
 ## Conference Papers ##
-  1. You can find source code here: [Source code for Paper1](https://github.com/ZhenyuZhangPhd/SWJTU-Cover-Letter-Template)。
-  2. 还没有发表会议论文，同时需加强presentation能力。
+  1. Submitted to ICC, et al.
 
 ## Patents ##
   1. 还没有
