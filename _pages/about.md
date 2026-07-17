@@ -1,17 +1,12 @@
 ---
+layout: default
 permalink: /
-title: "Welcome to my academic personal websites"
-author_profile: true
+title: "Zhenyu Zhang | Wireless Communications Researcher"
+excerpt: "Academic profile of Zhenyu Zhang, a Ph.D. candidate at Southwest Jiaotong University researching OTFS, ISAC, wireless channel modeling, and multiple access."
+lang: en-US
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-I'm a second year Phd student from [School of Information Science and Technology](https://sist.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/). My research interest includes wireless communication, delay doppler domain communication, integrated sensing and communications, and multiple access.
-I am now serving as a reviewer for international journals such as IEEE Transactions on Wireless Communications, et al. And I am also a TPC member of some international conferences such as IEEE ICC, et al.
-
-I am very fortunate to study in the Key Lab of information coding and transmission led by [Prof. Pingzhi Fan](https://www.XXX.com/) from [School of Information Science and Technology](https://sist.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/).
-
-You can find my CV here: [ZhenyuZhang's Curriculum Vitae](../files/NoteinSimplifiedChinese.pdf).
-
-<!-- [Email](mailto:XX@stu.pku.edu.cn) / [Github](https://github.com/QiuDi233) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/qd1813100174?spm=1000.2115.3001.5343) -->
+{% include academic-profile.html %}

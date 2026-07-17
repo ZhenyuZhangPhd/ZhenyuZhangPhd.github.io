@@ -1,0 +1,220 @@
+{% assign profile = site.data.profile %}
+{% assign is_zh = false %}
+{% if page.lang == "zh-CN" %}{% assign is_zh = true %}{% endif %}
+
+<main class="academic-profile{% if is_zh %} academic-profile--zh{% endif %}">
+  <section class="academic-hero" aria-labelledby="profile-title">
+    <div class="academic-shell academic-hero__inner">
+      <div class="academic-hero__copy">
+        <p class="academic-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          {% if is_zh %}博士研究生 · 无线通信{% else %}Doctoral researcher · Wireless communications{% endif %}
+        </p>
+        <h1 id="profile-title">{% if is_zh %}{{ profile.name.zh }}{% else %}{{ profile.name.en }}{% endif %}</h1>
+        <p class="academic-role">{% if is_zh %}{{ profile.role.zh }}{% else %}{{ profile.role.en }}{% endif %}</p>
+        <p class="academic-lead">{% if is_zh %}{{ profile.summary.zh }}{% else %}{{ profile.summary.en }}{% endif %}</p>
+        <div class="academic-actions" aria-label="{% if is_zh %}个人资料链接{% else %}Profile links{% endif %}">
+          <a class="academic-button academic-button--primary" href="mailto:{{ profile.contact.email }}">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>{% if is_zh %}邮件联系{% else %}Email{% endif %}</span>
+          </a>
+          <a class="academic-button" href="{{ profile.contact.orcid }}" rel="me">
+            <i class="ai ai-orcid" aria-hidden="true"></i>
+            <span>ORCID</span>
+          </a>
+          <a class="academic-button" href="{{ profile.contact.cv | relative_url }}">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+            <span>{% if is_zh %}个人简历{% else %}Curriculum Vitae{% endif %}</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="research-visual" role="img" aria-label="{% if is_zh %}时延-多普勒域研究示意图{% else %}Delay-Doppler research diagram{% endif %}">
+        <div class="research-visual__header">
+          <span>{% if is_zh %}研究坐标{% else %}Research coordinates{% endif %}</span>
+          <span>OTFS / ISAC</span>
+        </div>
+        <div class="dd-plane">
+          <span class="dd-plane__axis dd-plane__axis--y">ν · Doppler</span>
+          <span class="dd-plane__axis dd-plane__axis--x">τ · Delay</span>
+          <i class="dd-grid dd-grid--v1" aria-hidden="true"></i>
+          <i class="dd-grid dd-grid--v2" aria-hidden="true"></i>
+          <i class="dd-grid dd-grid--v3" aria-hidden="true"></i>
+          <i class="dd-grid dd-grid--h1" aria-hidden="true"></i>
+          <i class="dd-grid dd-grid--h2" aria-hidden="true"></i>
+          <i class="dd-grid dd-grid--h3" aria-hidden="true"></i>
+          <i class="dd-path dd-path--one" aria-hidden="true"></i>
+          <i class="dd-path dd-path--two" aria-hidden="true"></i>
+          <i class="dd-point dd-point--one" aria-hidden="true"></i>
+          <i class="dd-point dd-point--two" aria-hidden="true"></i>
+          <i class="dd-point dd-point--three" aria-hidden="true"></i>
+          <span class="dd-label dd-label--one">h(τ,ν)</span>
+          <span class="dd-label dd-label--two">x[k,l]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-facts" aria-label="{% if is_zh %}学术概览{% else %}Academic overview{% endif %}">
+    <div class="academic-shell profile-facts__inner">
+      <div class="profile-fact">
+        <strong>{{ profile.publications | size }}</strong>
+        <span>{% if is_zh %}ORCID 收录成果{% else %}Works on ORCID{% endif %}</span>
+      </div>
+      <div class="profile-fact">
+        <strong>2027</strong>
+        <span>{% if is_zh %}预计博士毕业{% else %}Ph.D. expected{% endif %}</span>
+      </div>
+      <div class="profile-fact profile-fact--id">
+        <strong>ORCID</strong>
+        <a href="{{ profile.contact.orcid }}">{{ profile.contact.orcid_id }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="academic-section" id="about">
+    <div class="academic-shell academic-grid">
+      <header class="section-heading">
+        <p>{% if is_zh %}个人简介{% else %}Profile{% endif %}</p>
+        <h2>{% if is_zh %}关于我{% else %}About{% endif %}</h2>
+      </header>
+      <div class="academic-grid__content profile-about">
+        <div class="profile-about__statement">
+          <p>
+            {% if is_zh %}
+              我目前就读于<a href="{{ profile.school.url }}">{{ profile.school.zh }}</a>，在<a href="{{ profile.laboratory.url }}">{{ profile.laboratory.zh }}</a>开展研究。
+            {% else %}
+              I am a doctoral researcher at the <a href="{{ profile.school.url }}">{{ profile.school.en }}</a>, working with the <a href="{{ profile.laboratory.url }}">{{ profile.laboratory.en }}</a>.
+            {% endif %}
+          </p>
+          <p>{% if is_zh %}{{ profile.projects.zh }}{% else %}{{ profile.projects.en }}{% endif %}</p>
+        </div>
+        <dl class="profile-coordinates">
+          <div>
+            <dt>{% if is_zh %}单位{% else %}Institution{% endif %}</dt>
+            <dd><a href="{{ profile.affiliation.url }}">{% if is_zh %}{{ profile.affiliation.zh }}{% else %}{{ profile.affiliation.en }}{% endif %}</a></dd>
+          </div>
+          <div>
+            <dt>{% if is_zh %}所在地{% else %}Location{% endif %}</dt>
+            <dd>{% if is_zh %}中国 · 成都{% else %}Chengdu, China{% endif %}</dd>
+          </div>
+          <div>
+            <dt>{% if is_zh %}学科{% else %}Discipline{% endif %}</dt>
+            <dd>{% if is_zh %}信息与通信工程{% else %}Information &amp; Communication Engineering{% endif %}</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="academic-section academic-section--tinted" id="research">
+    <div class="academic-shell academic-grid">
+      <header class="section-heading">
+        <p>{% if is_zh %}研究方向{% else %}Research{% endif %}</p>
+        <h2>{% if is_zh %}研究兴趣{% else %}Research interests{% endif %}</h2>
+      </header>
+      <div class="academic-grid__content research-list">
+        {% for item in profile.research %}
+          <article class="research-item">
+            <span class="research-item__number">{{ item.code }}</span>
+            <div>
+              <h3>{% if is_zh %}{{ item.title.zh }}{% else %}{{ item.title.en }}{% endif %}</h3>
+              <p>{% if is_zh %}{{ item.description.zh }}{% else %}{{ item.description.en }}{% endif %}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="academic-section" id="publications">
+    <div class="academic-shell academic-grid">
+      <header class="section-heading section-heading--sticky">
+        <p>{% if is_zh %}研究成果{% else %}Research output{% endif %}</p>
+        <h2>{% if is_zh %}代表性论文{% else %}Selected publications{% endif %}</h2>
+        <a class="section-heading__link" href="{{ profile.contact.orcid }}">
+          {% if is_zh %}查看 ORCID 记录{% else %}View ORCID record{% endif %}
+          <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+      </header>
+      <ol class="academic-grid__content publication-list">
+        {% for publication in profile.publications %}
+          <li class="publication-item">
+            <div class="publication-item__meta">
+              <time datetime="{{ publication.year }}">{{ publication.year }}</time>
+              <span>{% if is_zh %}{{ publication.kind.zh }}{% else %}{{ publication.kind.en }}{% endif %}</span>
+            </div>
+            <div class="publication-item__body">
+              <h3>{{ publication.title }}</h3>
+              <p class="publication-item__authors">
+                {% for author in publication.authors %}{% if author.self %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+              </p>
+              <div class="publication-item__footer">
+                <cite>{{ publication.venue }}</cite>
+                <a href="https://doi.org/{{ publication.doi }}" aria-label="DOI {{ publication.doi }}">
+                  DOI
+                  <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="academic-section academic-section--tinted" id="experience">
+    <div class="academic-shell academic-grid">
+      <header class="section-heading">
+        <p>{% if is_zh %}学术经历{% else %}Academic path{% endif %}</p>
+        <h2>{% if is_zh %}教育与服务{% else %}Education &amp; service{% endif %}</h2>
+      </header>
+      <div class="academic-grid__content experience-grid">
+        <div>
+          <h3 class="subsection-title">{% if is_zh %}教育经历{% else %}Education{% endif %}</h3>
+          <ol class="timeline">
+            {% for education in profile.education %}
+              <li>
+                <time>{% if is_zh %}{{ education.year.zh }}{% else %}{{ education.year.en }}{% endif %}</time>
+                <div>
+                  <strong>{% if is_zh %}{{ education.degree.zh }}{% else %}{{ education.degree.en }}{% endif %}</strong>
+                  <span>{% if is_zh %}{{ education.institution.zh }}{% else %}{{ education.institution.en }}{% endif %}</span>
+                </div>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+        <div>
+          <h3 class="subsection-title">{% if is_zh %}学术服务{% else %}Academic service{% endif %}</h3>
+          <ul class="service-list">
+            {% for service in profile.service %}
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i>
+                <span>{% if is_zh %}{{ service.zh }}{% else %}{{ service.en }}{% endif %}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="academic-contact" id="contact">
+    <div class="academic-shell academic-contact__inner">
+      <div>
+        <p class="academic-eyebrow">{% if is_zh %}联系方式{% else %}Contact{% endif %}</p>
+        <h2>{% if is_zh %}欢迎就相关研究进行交流。{% else %}Open to conversations around related research.{% endif %}</h2>
+      </div>
+      <div class="academic-contact__links">
+        <a href="mailto:{{ profile.contact.email }}">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <span>{{ profile.contact.email }}</span>
+        </a>
+        <a href="{{ profile.contact.github }}">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>

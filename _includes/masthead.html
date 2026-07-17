@@ -6,14 +6,18 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/" aria-label="Zhenyu Zhang home"><span class="masthead__monogram" aria-hidden="true">ZZ</span><span>{{ site.title }}</span></a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign navigation_url = link.url %}
+            {% if page.lang == 'zh-CN' and link.title == 'Publications' %}
+              {% assign navigation_url = '/zh/#publications' %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ navigation_url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

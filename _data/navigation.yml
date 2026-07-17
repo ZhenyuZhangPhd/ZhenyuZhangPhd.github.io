@@ -1,24 +1,11 @@
-# main links links
 main:
+  - title: "English"
+    url: /
+  - title: "中文"
+    url: /zh/
   - title: "Publications"
-    url: /publications/
-
-  # - title: "Talks"
-  #   url: /talks/    
-
-  # - title: "Teaching"
-  #   url: /teaching/    
-  - title: "中文页面"
-    url: /markdown/
-
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /non-menu-page/
-    # url: /year-archive/
-    
+    url: /#publications
   - title: "CV"
-    url: /cv/
-    
-
+    url: /files/zzyCV.pdf
+  - title: "ORCID"
+    url: https://orcid.org/0009-0004-6613-4551
